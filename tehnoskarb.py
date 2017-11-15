@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 #coding: utf-8
 import os,re
 import requests
@@ -147,7 +148,7 @@ while 1:
 		if internet_on():
 			for i in CATEGORIES:
 				Scaner(i)
-		time.sleep(3)
+		time.sleep(60)
 	except Exception as e:
 		print(e)
 		
