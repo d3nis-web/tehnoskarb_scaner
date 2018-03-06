@@ -16,6 +16,8 @@ CATEGORIES = json.loads(config_data)["categories"]
 TELEGRAM_TOKEN = json.loads(config_data)["telegram_token"]
 TELEGRAM_CHAT_ID = json.loads(config_data)["chat_id"]
 TELEGRAM_TEST_CHAT_ID = json.loads(config_data)["test_chat_id"]
+USER_EMAIL = ""
+USER_PHONE = ""
 # ================================================================
 
 def internet_on():
@@ -51,8 +53,8 @@ class Scaner:
 				# create session==============================================
 				session = requests.Session()
 				form_data = {
-					"email":"Jun1o0RWC@yandex.ru",
-					"phone":"+380(99)520-11-81",
+					"email":USER_EMAIL,
+					"phone":USER_PHONE,
 					"redirect":"/",
 					"action":"login",
 				}
